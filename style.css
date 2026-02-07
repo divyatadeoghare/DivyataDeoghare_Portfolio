@@ -7,6 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,9 +16,11 @@ html {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
@@ -30,11 +33,13 @@ html {
 section {
   padding: 100px 0;
 }
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
+
 .about,
 .services,
 .skills,
@@ -43,6 +48,7 @@ section {
 footer {
   font-family: "Poppins", sans-serif;
 }
+
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -52,6 +58,7 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+
 section .title {
   position: relative;
   text-align: center;
@@ -72,6 +79,7 @@ section .title::before {
   background: #111;
   transform: translateX(-50%);
 }
+
 section .title::after {
   position: absolute;
   bottom: -8px;
@@ -92,32 +100,31 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
+
 .navbar.sticky {
   padding: 15px 0;
   background: #98BDD0;
 }
+
 .navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
 }
+
 .navbar .logo a {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-}
-.navbar .logo a span {
   color: #000;
-  transition: all 0.3s ease;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: monospace;
 }
-.navbar.sticky .logo a span {
-  color: #fff;
-}
+
 .navbar .menu li {
   list-style: none;
   display: inline-block;
 }
+
 .navbar .menu li a {
   display: block;
   color: #000;
@@ -126,9 +133,11 @@ section .title::after {
   margin-left: 25px;
   transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover {
   color: #0275d8;
 }
+
 .navbar.sticky .menu li a:hover {
   color: #0275d8;
 }
@@ -140,6 +149,7 @@ section .title::after {
   cursor: pointer;
   display: none;
 }
+
 .scroll-up-btn {
   position: fixed;
   height: 45px;
@@ -159,11 +169,13 @@ section .title::after {
   pointer-events: none;
   transition: all 0.3s ease;
 }
+
 .scroll-up-btn.show {
   bottom: 30px;
   opacity: 1;
   pointer-events: auto;
 }
+
 .scroll-up-btn:hover {
   filter: brightness(90%);
 }
@@ -179,29 +191,36 @@ section .title::after {
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
+
 .home .max-width {
   width: 100%;
   display: flex;
 }
+
 .home .max-width .row {
   margin-right: 0;
 }
+
 .home .home-content .text-1 {
   font-size: 27px;
 }
+
 .home .home-content .text-2 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
+
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
+
 .home .home-content .text-3 span {
   color: #0275d8;
   font-weight: 500;
 }
+
 .home .home-content a {
   display: inline-block;
   background: #0275d8;
@@ -214,6 +233,7 @@ section .title::after {
   border: 2px solid #0275d8;
   transition: all 0.3s ease;
 }
+
 .home .home-content a:hover {
   color: #0275d8;
   background: none;
@@ -223,29 +243,36 @@ section .title::after {
 .about .title::after {
   content: "who i am";
 }
+
 .about .about-content .left {
   width: 45%;
 }
+
 .about .about-content .left img {
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
+
 .about .about-content .right {
   width: 55%;
 }
+
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .about .about-content .right .text span {
   color: #0275d8;
 }
+
 .about .about-content .right p {
   text-align: justify;
 }
+
 .about .about-content .right a {
   display: inline-block;
   background: #0275d8;
@@ -258,6 +285,7 @@ section .title::after {
   border: 2px solid #0275d8;
   transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover {
   color: #0275d8;
   background: none;
@@ -267,22 +295,27 @@ section .title::after {
 .skills .title::after {
   content: "what i know";
 }
+
 .skills .skills-content .column {
   width: calc(50% - 30px);
 }
+
 .skills .skills-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .project-desc {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .skills .skills-content .left p {
   text-align: justify;
 }
+
 .skills .skills-content .left a {
   display: inline-block;
   background: #0275d8;
@@ -295,23 +328,28 @@ section .title::after {
   border: 2px solid #0275d8;
   transition: all 0.3s ease;
 }
+
 .skills .skills-content .left a:hover {
   color: #0275d8;
   background: none;
 }
+
 .skills .skills-content .right {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-row: auto;
 }
+
 .skills .skills-content .right .image {
   width: 80%;
   height: 80%;
   transition: transform 0.3s ease;
 }
+
 .skills .skills-content .right .image:hover {
   transform: scale(1.1);
 }
+
 .project-content {
   width: 100%;
   margin-top: 2rem;
@@ -319,11 +357,13 @@ section .title::after {
   flex-direction: column;
   align-items: center;
 }
+
 .project-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .project-item {
   flex-basis: 48%;
   background-color: rgb(250, 250, 250);
@@ -337,35 +377,43 @@ section .title::after {
   cursor: pointer;
   transition: transform 0.5s ease;
 }
+
 .project-item:hover {
   transform: scale(1.05);
 }
+
 .project-item ul {
   padding: 0 1.5rem;
 }
+
 .project-item li {
   list-style-type: square;
 }
+
 .project-item li::marker {
   color: #0275d8;
 }
+
 .project-item .project-title {
   align-self: center;
   font-size: 1.2rem;
   padding: 0 1rem;
   text-align: center;
 }
+
 .project-item .project-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 .project-item .button-group {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .project-content a {
   display: inline-block;
   background: #0275d8;
@@ -378,6 +426,7 @@ section .title::after {
   border: 2px solid #0275d8;
   transition: all 0.3s ease;
 }
+
 .project-content a:hover {
   color: #0275d8;
   background: none;
@@ -389,15 +438,18 @@ section .title::after {
   color: #fff;
   background: #111;
 }
+
 .services .title::before,
 .teams .title::before {
   background: #fff;
 }
+
 .services .title::after,
 .teams .title::after {
   background: #111;
   content: "what i provide";
 }
+
 .services .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
@@ -407,23 +459,29 @@ section .title::after {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover {
   background: #0275d8;
 }
+
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
+
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
+
 .services .serv-content .card i {
   font-size: 50px;
   color: #0275d8;
   transition: color 0.3s ease;
 }
+
 .services .serv-content .card:hover i {
   color: #fff;
 }
+
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
@@ -434,50 +492,62 @@ section .title::after {
 .contact .title::after {
   content: "get in touch";
 }
+
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .contact .contact-content .contact-left,
 .contact .contact-content .contact-right {
   flex-basis: 40%;
 }
+
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .contact .contact-content p {
   text-align: justify;
 }
+
 .contact .contact-content .row {
   display: flex;
   height: 65px;
   align-items: center;
 }
+
 .contact .contact-content .row .info {
   margin-left: 20px;
 }
+
 .contact .contact-content .row i {
   font-size: 25px;
   color: #0275d8;
 }
+
 .contact .contact-content .info .head {
   font-weight: 500;
 }
+
 .contact .contact-content .info .sub-title {
   color: #333;
 }
+
 .contact .contact-content .info .sub-title a {
   display: inline-block;
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+
 .contact .contact-content .info .sub-title a:hover {
   text-decoration: underline;
 }
+
 .thankyou {
   font-size: 20px;
   font-weight: 600;
@@ -493,10 +563,12 @@ footer {
   color: #fff;
   text-align: center;
 }
+
 footer span a {
   color: #0275d8;
   text-decoration: none;
 }
+
 footer span a:hover {
   text-decoration: underline;
 }
@@ -514,18 +586,22 @@ footer span a:hover {
     padding: 0 50px;
   }
 }
+
 @media (max-width: 947px) {
   .project-item {
     flex-basis: 100%;
   }
+
   .menu-btn {
     display: block;
     z-index: 999;
   }
+
   .menu-btn i.active:before {
     content: "\f00d";
     color: #000;
   }
+
   .navbar .menu {
     position: fixed;
     height: 100vh;
@@ -537,79 +613,98 @@ footer span a:hover {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
-  
-  
+
+
   .navbar .menu.active {
     left: 0;
   }
+
   .navbar .menu li {
     display: block;
   }
+
   .navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
+
   .home .home-content .text-2 {
     font-size: 70px;
   }
+
   .home .home-content .text-3 {
     font-size: 35px;
   }
+
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
+
   .max-width {
     max-width: 930px;
   }
+
   .about .about-content .column {
     width: 100%;
   }
+
   .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
   .column.left img {
     max-width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
   }
+
   .about .about-content .right {
     flex: 100%;
   }
+
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+
   .skills .skills-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
+
   .project-content {
     margin-top: 10px;
   }
 }
 
 @media (max-width: 690px) {
+
   .contact .contact-content .contact-left,
   .contact .contact-content .contact-right {
     flex-basis: 100%;
   }
+
   .max-width {
     padding: 0 23px;
   }
+
   .home .home-content .text-2 {
     font-size: 60px;
   }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
+
   .home .home-content a {
     font-size: 20px;
   }
+
   .services .serv-content .card {
     width: 100%;
   }
@@ -619,13 +714,16 @@ footer span a:hover {
   .home .home-content .text-2 {
     font-size: 50px;
   }
+
   .home .home-content .text-3 {
     font-size: 27px;
   }
+
   .about .about-content .right .text,
   .skills .skills-content .left .text {
     font-size: 19px;
   }
+
   .scroll-up-btn {
     right: 15px;
     bottom: 15px;
@@ -634,6 +732,7 @@ footer span a:hover {
     font-size: 23px;
     line-height: 38px;
   }
+
   .project-desc {
     margin-bottom: 0px;
   }

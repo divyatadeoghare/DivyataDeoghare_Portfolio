@@ -101,10 +101,10 @@ $(window)
   .resize(function () {
     if (window.innerWidth < 400) {
       document.querySelector(".logo").innerHTML =
-        '<a href="#">Div<span>yata</span></a>';
-    } else if (window.innerWidth > 400) {
+        '<a href="#">&lt;D/D&gt;</a>';
+    } else {
       document.querySelector(".logo").innerHTML =
-        '<a href="#">Div<span>yata</span> Deo<span>ghare</span></a>';
+        '<a href="#">&lt;D/D&gt;</a>';
     }
   })
   .resize();
