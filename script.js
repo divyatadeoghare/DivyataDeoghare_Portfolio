@@ -108,3 +108,26 @@ $(window)
     }
   })
   .resize();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const projects = document.querySelectorAll(".project-item");
+  const btn = document.getElementById("viewMoreBtn");
+
+  // Show only first 4 projects
+  for (let i = 4; i < projects.length; i++) {
+    projects[i].classList.add("hidden");
+  }
+
+  btn.addEventListener("click", function () {
+    for (let i = 4; i < projects.length; i++) {
+      projects[i].classList.toggle("hidden");
+    }
+
+    // Change button text
+    if (btn.innerText === "View More") {
+      btn.innerText = "View Less";
+    } else {
+      btn.innerText = "View More";
+    }
+  });
+});  
